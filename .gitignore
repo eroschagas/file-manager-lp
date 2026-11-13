@@ -4,6 +4,7 @@
 .nuxt
 .nitro
 .cache
+.test-output
 dist
 
 # Node dependencies

@@ -1,0 +1,124 @@
+:root {
+  --font-body: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: var(--font-body);
+  --font-editorial: Georgia, serif;
+  --primary: #6650d8;
+  --primary-dark: #5140b3;
+  --primary-soft: #eeeafd;
+  --paper: #f8f9fb;
+  --ink: #242735;
+  --muted: #797d8b;
+  --border: #e5e7ee;
+  --surface: #f5f6f9;
+  --shadow: #5140b314;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+}
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 5px;
+}
+::selection {
+  background: var(--border);
+}
+.wrap {
+  width: min(1220px, calc(100% - 100px));
+  margin-inline: auto;
+}
+.eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+}
+.windows {
+  font-size: 24px;
+  line-height: 0.8;
+}
+.text-link {
+  font-size: 12px;
+  font-weight: 500;
+  &:hover {
+    color: var(--primary);
+  }
+}
+em {
+  font-family: var(--font-editorial);
+  color: var(--primary);
+  font-weight: 400;
+}
+h2 {
+  font-family: var(--font-heading);
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: -1.6px;
+  line-height: 1.25;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 40px;
+  h2 {
+    margin: 17px 0 0;
+  }
+  > p {
+    font-size: 12px;
+    line-height: 1.9;
+    color: var(--muted);
+  }
+}
+@media (min-width: 1600px) {
+  .wrap {
+    width: min(1320px, calc(100% - 160px));
+  }
+}
+@media (max-width: 1100px) {
+  .wrap {
+    width: calc(100% - 60px);
+  }
+}
+@media (max-width: 767px) {
+  .wrap {
+    width: calc(100% - 40px);
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .section-heading {
+    display: block;
+    margin-bottom: 28px;
+    > p {
+      margin-top: 20px;
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
