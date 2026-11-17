@@ -15,7 +15,7 @@ npm run dev
 npm run generate
 ```
 
-Deploy `.output/public`. `netlify.toml` configures this command, the publish directory, and asset caching. The landing page is rendered at build time, so serving its HTML does not require a serverless function. `npm run build` remains available for a Node server deployment.
+Local generation writes to `.output/public`. On Netlify, `netlify.toml` explicitly selects `NITRO_PRESET=netlify-static`, which writes to `dist`, and configures `dist` as the publish directory. It also configures asset caching. The landing page is rendered at build time, so serving its HTML does not require a serverless function. `npm run build` remains available for a Node server deployment.
 
 ## Performance and accessibility
 
