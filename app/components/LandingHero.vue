@@ -68,13 +68,14 @@ import { lakeImage, mountainImage } from "../data/landing";
 <style scoped lang="scss">
 .hero {
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
   gap: 30px;
   min-height: 650px;
   padding-block: 35px 72px;
   align-items: center;
 }
 .hero__copy {
+  min-width: 0;
   h1 {
     font-family: var(--font-heading);
     font-size: clamp(48px, 4.7vw, 67px);
@@ -95,12 +96,14 @@ import { lakeImage, mountainImage } from "../data/landing";
 }
 .hero__actions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 25px;
   margin-top: 30px;
 }
 .hero__notes {
   display: flex;
+  flex-wrap: wrap;
   gap: 18px;
   font-size: 10px;
   color: var(--muted);
@@ -247,7 +250,8 @@ import { lakeImage, mountainImage } from "../data/landing";
     gap: 15px;
   }
   .hero__copy h1 {
-    font-size: 53px;
+    font-size: clamp(40px, 4.8vw, 53px);
+    letter-spacing: -2.6px;
   }
   .hero__visual {
     transform: scale(0.85);
@@ -255,6 +259,26 @@ import { lakeImage, mountainImage } from "../data/landing";
   .hero__actions {
     flex-wrap: wrap;
     gap: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+  .hero__copy {
+    h1 {
+      font-size: 60px;
+    }
+    > p {
+      max-width: 520px;
+    }
+  }
+  .hero__visual {
+    width: min(540px, 100%);
+    margin-inline: auto;
+    transform: none;
   }
 }
 @media (max-width: 767px) {

@@ -14,9 +14,13 @@
       <label
         :id="`toolLabel${index}`"
         class="tool-selector__label"
+        :style="{ gridColumn: index + 1 }"
         :for="`toolChoice${index}`"
       >
-        <span aria-hidden="true">{{ tool.icon }}</span>{{ tool.title }}
+        <span class="tool-selector__icon" aria-hidden="true">{{
+          tool.icon
+        }}</span>
+        <span class="tool-selector__title">{{ tool.title }}</span>
         <small aria-hidden="true">0{{ index + 1 }}</small>
       </label>
       <div
@@ -87,7 +91,7 @@ const props = defineProps({
       margin-right: 6px;
     }
 
-    > span {
+    .tool-selector__icon {
       font-size: 20px;
     }
     small {
@@ -124,10 +128,14 @@ const props = defineProps({
 @media (max-width: 767px) {
   .tool-selector__label {
     justify-content: center;
-    padding: 10px 4px;
-    gap: 5px;
-    font-size: 9px;
-    > span {
+    flex-direction: column;
+    min-height: 68px;
+    padding: 10px 6px;
+    gap: 6px;
+    font-size: 11px;
+    line-height: 1.35;
+    text-align: center;
+    .tool-selector__icon {
       font-size: 16px;
     }
     small {

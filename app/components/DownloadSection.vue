@@ -55,7 +55,6 @@
   }
   .closing__flower {
     right: -65px;
-    opacity: 0.5;
   }
 }
 </style>

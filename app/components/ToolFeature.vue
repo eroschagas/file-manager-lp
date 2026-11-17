@@ -36,11 +36,12 @@ const props = defineProps({
   border-radius: 12px;
   padding: 53px 45px;
   display: grid;
-  grid-template-columns: 0.85fr 1fr;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
   gap: 60px;
   align-items: center;
 }
 .feature__copy {
+  min-width: 0;
   .eyebrow {
     font-size: 8px;
     letter-spacing: 1.4px;
@@ -73,6 +74,18 @@ const props = defineProps({
   .feature {
     padding: 35px;
     gap: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .feature {
+    grid-template-columns: 1fr;
+  }
+  .feature__copy h3 {
+    max-width: none;
+  }
+  .feature > .demo {
+    width: min(100%, 540px);
+    justify-self: center;
   }
 }
 @media (max-width: 767px) {
