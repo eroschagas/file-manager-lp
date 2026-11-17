@@ -1,2 +1,4 @@
 User-Agent: *
 Disallow:
+
+Sitemap: https://lumora-app-website.netlify.app/sitemap.xml

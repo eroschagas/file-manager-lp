@@ -6,7 +6,7 @@
     </div>
     <div class="faq__items">
       <details v-for="item in faqs" :key="item.question">
-        <summary>{{ item.question }}<span>+</span></summary>
+        <summary>{{ item.question }}<span aria-hidden="true">+</span></summary>
         <p>{{ item.answer }}</p>
       </details>
     </div>

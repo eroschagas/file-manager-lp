@@ -7,17 +7,18 @@
   --primary-soft: #eeeafd;
   --paper: #f8f9fb;
   --ink: #242735;
-  --muted: #797d8b;
+  --muted: #626675;
   --border: #e5e7ee;
   --surface: #f5f6f9;
   --shadow: #5140b314;
+  --header-height: 105px;
 }
 * {
   box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 30px;
+  scroll-padding-top: calc(var(--header-height) + 20px);
 }
 body {
   margin: 0;
@@ -98,6 +99,9 @@ h2 {
   }
 }
 @media (max-width: 767px) {
+  :root {
+    --header-height: 82px;
+  }
   .wrap {
     width: calc(100% - 40px);
   }

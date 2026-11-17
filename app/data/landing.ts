@@ -1,10 +1,8 @@
 import type { Tool } from "../types/Tool";
 export const downloadUrl =
   "https://drive.google.com/file/d/14OTTyofIaB3FnNg4w_ODrJ_jxAm96i9i/view?usp=sharing";
-export const lakeImage =
-  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=85";
-export const mountainImage =
-  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=85";
+export const lakeImage = "/images/alpine-lake.webp";
+export const mountainImage = "/images/mountain-peaks.webp";
 export const tools: Tool[] = [
   {
     title: "Find duplicates",

@@ -1,16 +1,24 @@
 <template>
-  <header class="header wrap">
-    <BrandLogo />
-    <nav aria-label="Main navigation">
-      <a href="#features">Features</a><a href="#how-it-works">How it works</a
-      ><a href="#faq">FAQ</a>
-    </nav>
-    <DownloadLink outline compact>Get Lumora ↗</DownloadLink>
+  <header class="header">
+    <div class="header__inner wrap">
+      <BrandLogo />
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a><a href="#how-it-works">How it works</a
+        ><a href="#faq">FAQ</a>
+      </nav>
+      <DownloadLink outline compact>Get Lumora ↗</DownloadLink>
+    </div>
   </header>
 </template>
 <style scoped lang="scss">
 .header {
-  height: 105px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--paper);
+}
+.header__inner {
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,8 +30,7 @@
   }
 }
 @media (max-width: 767px) {
-  .header {
-    height: 82px;
+  .header__inner {
     nav {
       display: none;
     }

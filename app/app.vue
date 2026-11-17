@@ -1,25 +1,38 @@
 <template>
-  <NuxtRouteAnnouncer />
   <div class="landing">
+    <a class="landing__skip-link" href="#mainContent">Skip to content</a>
     <LandingHeader />
-    <main>
-      <LandingHero /><PrivacyStrip /><LandingFeatures /><LandingWorkflow /><LandingPrivacy /><LandingFaq /><DownloadSection />
+    <main id="mainContent" tabindex="-1">
+      <LandingHero />
+      <PrivacyStrip />
+      <LandingFeatures />
+      <LandingWorkflow />
+      <LandingPrivacy />
+      <LandingFaq />
+      <DownloadSection />
     </main>
     <LandingFooter />
   </div>
 </template>
 <script setup lang="ts">
-useHead({
-  htmlAttrs: { lang: "en" },
-  title: "Lumora — Less clutter. More room for what matters.",
-  link: [{ rel: "icon", type: "image/svg+xml", href: "/lumora.svg" }],
-  meta: [
-    {
-      name: "description",
-      content:
-        "Find duplicate photos and videos, organize files by date, and edit metadata in batches. Lumora is your local media organizer for Windows.",
-    },
-    { name: "theme-color", content: "#f8f9fb" },
-  ],
-});
+if (import.meta.server) {
+  useLandingSeo();
+}
 </script>
+<style scoped lang="scss">
+.landing__skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  padding: 12px 18px;
+  background: var(--ink);
+  color: white;
+  border-radius: 6px;
+  transform: translateY(-200%);
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
+</style>

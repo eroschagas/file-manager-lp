@@ -26,12 +26,20 @@
       <div class="photo photo--back">
         <img
           :src="mountainImage"
+          width="530"
+          height="530"
+          fetchpriority="high"
+          decoding="async"
           alt="Mountain peaks beneath a blue sky"
         /><span>weekend escapes</span>
       </div>
       <div class="photo photo--front">
         <img
           :src="lakeImage"
+          width="600"
+          height="520"
+          fetchpriority="high"
+          decoding="async"
           alt="A peaceful alpine lake reflecting the mountains"
         /><span>the ones worth keeping. <b>♡</b></span>
       </div>
@@ -49,7 +57,7 @@
           Your memories, organized.<small>Right where they belong.</small>
         </div>
       </div>
-      <span class="hero__flower">✳</span
+      <span class="hero__flower" aria-hidden="true">✳</span
       ><span class="hero__caption">A clearer space. A clearer mind.</span>
     </div>
   </section>

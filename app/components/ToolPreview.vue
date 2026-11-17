@@ -24,7 +24,14 @@
           :key="name"
           :class="['demo__photo', { 'demo__photo--selected': index === 1 }]"
         >
-          <img :src="lakeImage" alt="Example duplicate landscape" /><span
+          <img
+            :src="lakeImage"
+            alt="Example duplicate landscape"
+            width="600"
+            height="520"
+            loading="lazy"
+            decoding="async"
+          /><span
             >{{ name }} <b>{{ index === 0 ? "Keep" : "✓" }}</b></span
           ><small>{{
             index === 0 ? "4032 × 3024 · 4.8 MB" : "2016 × 1512 · 1.6 MB"
