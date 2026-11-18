@@ -1,6 +1,6 @@
 import type { Tool } from "../types/Tool";
 export const downloadUrl =
-  "https://drive.google.com/file/d/14OTTyofIaB3FnNg4w_ODrJ_jxAm96i9i/view?usp=sharing";
+  "https://drive.google.com/file/d/1CxjKt6EgYZCdGNkx8BTbUbQunSPNY08U/view?usp=sharing";
 export const lakeImage = "/images/alpine-lake.webp";
 export const mountainImage = "/images/mountain-peaks.webp";
 export const tools: Tool[] = [
