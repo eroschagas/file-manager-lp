@@ -6,7 +6,7 @@
       target="_blank"
       rel="noopener noreferrer"
       >Find us on GitHub ↗</a
-    ><small>© {{ new Date().getFullYear() }} Lumora</small>
+    ><small>© {{ new Date().getFullYear() }} Lunera</small>
   </footer>
 </template>
 <style scoped lang="scss">

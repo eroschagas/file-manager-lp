@@ -1,6 +1,6 @@
-﻿# Lumora website
+# Lunera website
 
-Nuxt 4 and Vue 3 landing page for the Lumora Windows media organizer.
+Nuxt 4 and Vue 3 landing page for the Lunera Windows media organizer.
 
 ## Development
 

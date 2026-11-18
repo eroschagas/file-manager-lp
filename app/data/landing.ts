@@ -25,7 +25,7 @@ export const tools: Tool[] = [
     label: "A LITTLE STRUCTURE GOES A LONG WAY",
     heading: "A collection that falls into place.",
     description:
-      "Turn a jumble of files into year and month folders. Lumora reads capture dates when available and lets you preview the destination before making a move.",
+      "Turn a jumble of files into year and month folders. Lunera reads capture dates when available and lets you preview the destination before making a move.",
     details: [
       "Clear year and month folders",
       "Preview the plan before moving files",
@@ -59,7 +59,7 @@ export const steps = [
   {
     number: "01",
     title: "Choose your folders",
-    text: "Point Lumora to the files that need a little attention. Subfolders are included, too.",
+    text: "Point Lunera to the files that need a little attention. Subfolders are included, too.",
   },
   {
     number: "02",
@@ -69,7 +69,7 @@ export const steps = [
   {
     number: "03",
     title: "Make room for more",
-    text: "Confirm your choices and let Lumora do the busywork. You stay in control.",
+    text: "Confirm your choices and let Lunera do the busywork. You stay in control.",
   },
 ];
 export const faqs = [
@@ -79,7 +79,7 @@ export const faqs = [
       "No. Duplicate detection, file organization, and metadata editing run locally. Your files are not uploaded to an external service.",
   },
   {
-    question: "Does Lumora delete files automatically?",
+    question: "Does Lunera delete files automatically?",
     answer:
       "Scanning does not change your files. Review your selected duplicates and confirm before moving them to the Windows Recycle Bin. Visual similarity is a suggestion, so compare files before removing them.",
   },
@@ -94,7 +94,7 @@ export const faqs = [
       "Yes. Compare duplicate groups, preview destination folders, and confirm metadata changes before applying them. Metadata edits write directly to existing files without creating backup copies.",
   },
   {
-    question: "Is Lumora available for Mac or Linux?",
+    question: "Is Lunera available for Mac or Linux?",
     answer:
       "The current download is for Windows. Explore the source code and development instructions on GitHub.",
   },

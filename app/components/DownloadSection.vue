@@ -3,7 +3,7 @@
     <span class="eyebrow">MAKE ROOM FOR WHAT’S NEXT</span>
     <h2>A little less clutter.<br />A lot more <em>possibility.</em></h2>
     <DownloadLink
-      ><span class="windows">⊞</span> Download Lumora for Windows
+      ><span class="windows">⊞</span> Download Lunera for Windows
       ↗</DownloadLink
     >
     <p>Your memories don’t need the cloud. Just a little care.</p>

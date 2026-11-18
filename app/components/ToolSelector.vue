@@ -1,6 +1,6 @@
 <template>
   <fieldset class="tool-selector">
-    <legend class="tool-selector__legend">Explore Lumora tools</legend>
+    <legend class="tool-selector__legend">Explore Lunera tools</legend>
     <template v-for="(tool, index) in props.tools" :key="tool.title">
       <input
         :id="`toolChoice${index}`"

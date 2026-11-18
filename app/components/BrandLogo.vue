@@ -2,14 +2,14 @@
   <a
     href="#"
     :class="['brand', { 'brand--compact': props.compact }]"
-    aria-label="Lumora home"
+    aria-label="Lunera home"
     ><img
       class="brand__logo"
-      src="/lumora.svg"
+      src="/lunera.svg"
       alt=""
       width="36"
       height="36"
-    /><span class="brand__name">Lumora</span></a
+    /><span class="brand__name">Lunera</span></a
   >
 </template>
 <script setup lang="ts">

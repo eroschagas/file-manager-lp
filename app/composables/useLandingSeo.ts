@@ -2,9 +2,9 @@ import { downloadUrl, faqs, lakeImage, mountainImage } from "../data/landing";
 
 export const useLandingSeo = (): void => {
   const siteUrl = "https://lumora-app-website.netlify.app/";
-  const title = "Lumora — Photo & Video Organizer for Windows";
+  const title = "Lunera — Photo & Video Organizer for Windows";
   const description =
-    "Find duplicate photos and videos, organize files by date, and edit metadata in batches. Lumora is your local media organizer for Windows.";
+    "Find duplicate photos and videos, organize files by date, and edit metadata in batches. Lunera is your local media organizer for Windows.";
 
   useSeoMeta({
     title,
@@ -16,24 +16,24 @@ export const useLandingSeo = (): void => {
     ogTitle: title,
     ogDescription: description,
     ogUrl: siteUrl,
-    ogSiteName: "Lumora",
+    ogSiteName: "Lunera",
     ogLocale: "en_US",
     ogImage: `${siteUrl}images/alpine-lake.webp`,
     ogImageWidth: 600,
     ogImageHeight: 520,
-    ogImageAlt: "An alpine lake reflecting the mountains, featured on Lumora",
+    ogImageAlt: "An alpine lake reflecting the mountains, featured on Lunera",
     twitterCard: "summary_large_image",
     twitterTitle: title,
     twitterDescription: description,
     twitterImage: `${siteUrl}images/alpine-lake.webp`,
     twitterImageAlt:
-      "An alpine lake reflecting the mountains, featured on Lumora",
+      "An alpine lake reflecting the mountains, featured on Lunera",
   });
 
   useHead({
     htmlAttrs: { lang: "en" },
     link: [
-      { rel: "icon", type: "image/svg+xml", href: "/lumora.svg" },
+      { rel: "icon", type: "image/svg+xml", href: "/lunera.svg" },
       { rel: "canonical", href: siteUrl },
       { rel: "preload", as: "image", href: lakeImage, fetchpriority: "high" },
       {
@@ -46,7 +46,7 @@ export const useLandingSeo = (): void => {
     script: [
       {
         type: "application/ld+json",
-        key: "lumora-structured-data",
+        key: "lunera-structured-data",
         textContent: JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
@@ -54,20 +54,20 @@ export const useLandingSeo = (): void => {
               "@type": "WebSite",
               "@id": `${siteUrl}#website`,
               url: siteUrl,
-              name: "Lumora",
+              name: "Lunera",
               description,
               inLanguage: "en",
             },
             {
               "@type": "SoftwareApplication",
               "@id": `${siteUrl}#application`,
-              name: "Lumora",
+              name: "Lunera",
               url: siteUrl,
               description,
               operatingSystem: "Windows",
               applicationCategory: "UtilitiesApplication",
               downloadUrl,
-              image: `${siteUrl}lumora.svg`,
+              image: `${siteUrl}lunera.svg`,
               sameAs: "https://github.com/eroschagas/file-manager",
               featureList: [
                 "Local duplicate photo and video detection",

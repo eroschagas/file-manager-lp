@@ -5,7 +5,7 @@
       <span class="eyebrow">PERSONAL MEANS PERSONAL</span>
       <h2>Your files stay <em>your files.</em></h2>
       <p>
-        Family photos. Unfinished projects. That one perfect sunset. Lumora
+        Family photos. Unfinished projects. That one perfect sunset. Lunera
         processes everything on your computer, without uploading your collection
         to an external service.
       </p>

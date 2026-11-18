@@ -6,7 +6,7 @@
         <a href="#features">Features</a><a href="#how-it-works">How it works</a
         ><a href="#faq">FAQ</a>
       </nav>
-      <DownloadLink outline compact>Get Lumora ↗</DownloadLink>
+      <DownloadLink outline compact>Get Lunera ↗</DownloadLink>
     </div>
   </header>
 </template>
